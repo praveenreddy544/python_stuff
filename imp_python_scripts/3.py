@@ -1,0 +1,12 @@
+import time
+start_time=time.localtime()
+local_start_time=time.strftime('%X',start_time)
+print(f"start time in locale reprentation is------> {local_start_time}")
+print()
+print()
+input("Hit entery key to start")
+stop_time=time.localtime()
+local_stop_time=time.strftime('%X',stop_time)
+print(f"Stop time in local representation is -----> {local_stop_time}")
+difference=time.mktime(stop_time) - time.mktime(start_time)
+print(f"Difference in time is ----> {difference}")
